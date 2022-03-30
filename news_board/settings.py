@@ -1,11 +1,9 @@
 from pathlib import Path
-import os
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-
-SECRET_KEY = os.environ.get('SECRET__KEY')
-
+# Change the SECRET_KEY
+SECRET_KEY = '6ows3!5)xav1%%7=RGdsf436GFe6a-7^%n*ap!)2wx#sdgf%(1@GS-*h&u)4l6q4vv'
 DEBUG = False
 
 ALLOWED_HOSTS = ['127.0.0.1:8000', '.herokuapp.com']
@@ -28,7 +26,7 @@ MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
-    "corsheaders.middleware.CorsMiddleware",
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
