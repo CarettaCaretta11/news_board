@@ -15,3 +15,4 @@ You may also want to reset the upvotes given to posts. For the development mode,
 ```python
 (python) manage.py run_huey
 ```
+For the production, upvotes are reset at 6.30 P.M. (UTC) everyday.
