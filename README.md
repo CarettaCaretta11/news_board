@@ -11,3 +11,7 @@ Clone the repo, make sure config files are set-up properly, then pull the repo a
 docker-compose build
 docker-compose up
 ```
+You may have to trigger the background-task executor *Huey* only for development (local) mode by
+```python
+manage.py run_huey
+```
