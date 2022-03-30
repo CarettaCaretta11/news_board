@@ -11,24 +11,27 @@ class Post(models.Model):
     created = models.DateTimeField(auto_now_add=True)
 
     class Meta:
-        ordering = ['-updated', '-created']
+        ordering = ["-updated", "-created"]
 
     def __str__(self):
         return self.link
 
     def save(self, *args, **kwargs):
         self.link = slugify(self.title)
-        super().save(*args, **kwargs)    
+        super().save(*args, **kwargs)
+
 
 class Comment(models.Model):
     author = models.CharField(max_length=255)
     content = models.CharField(max_length=255)
-    post = models.ForeignKey(Post, on_delete=models.CASCADE, related_name="comments", null=True)
+    post = models.ForeignKey(
+        Post, on_delete=models.CASCADE, related_name="comments", null=True
+    )
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
 
     class Meta:
-        ordering = ['-updated', '-created']
+        ordering = ["-updated", "-created"]
 
     def __str__(self):
-        return self.content[:20];
+        return self.content[:20]
