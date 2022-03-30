@@ -11,7 +11,7 @@ Clone the repo, make sure config files are set-up properly, then pull the repo a
 docker-compose build
 docker-compose up
 ```
-You may have to trigger the background-task executor *Huey* only for development (local) mode by
+You may also want to reset the upvotes given to posts. For the development mode, this is done by
 ```python
-manage.py run_huey
+(python) manage.py run_huey
 ```
