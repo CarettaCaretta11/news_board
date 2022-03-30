@@ -6,7 +6,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "6ows3!5)xav1%%7=RGdsf436GFe6a-7^%n*ap!)2wx#sdgf%(1@GS-*h&u)4l6q4vv"
 DEBUG = False
 
-ALLOWED_HOSTS = ["127.0.0.1:8000", ".herokuapp.com"]
+ALLOWED_HOSTS = ["127.0.0.1", ".herokuapp.com"]
 
 
 INSTALLED_APPS = [
