@@ -2,7 +2,7 @@
 
 A fully functional REST API for creating posts, and comments on them. The API is deployed [here](https://news1board.herokuapp.com/api). 
 
-Refer to https://bit.ly/3qNe6bm for brief documentation.
+Refer to https://bit.ly/3qNe6bm for the brief documentation.
 
 ## Usage
 
