@@ -11,7 +11,7 @@ Clone the repo, make sure config files are set-up properly, then pull the repo a
 docker-compose build
 docker-compose up
 ```
-You may also want to reset the upvotes given to posts. For the development mode, this is done by
+For the development mode, to daily reset all the upvotes
 ```python
 (python) manage.py run_huey
 ```
